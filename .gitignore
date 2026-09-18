@@ -1,0 +1,20 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Firma de release: nunca se sube a git. Hacer una copia de seguridad aparte
+# (por ejemplo un pendrive o un gestor de contraseñas), porque si se pierde
+# no se puede instalar una actualizacion sobre la app ya instalada.
+/keystore/

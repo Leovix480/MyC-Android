@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  La API todavia se sirve por HTTP sin cifrar. Android bloquea HTTP por defecto,
+  asi que se habilita SOLO para estas direcciones (no para todo internet).
+
+  Si la IP del servidor cambia, hay que actualizarla aca tambien.
+  Cuando la API pase a HTTPS, este archivo se puede borrar junto con la linea
+  android:networkSecurityConfig del manifest.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Servidor de produccion -->
+        <domain includeSubdomains="false">186.17.107.54</domain>
+        <!-- El host de la PC visto desde el emulador de Android -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <!-- La PC en la red WiFi local, para probar con un celular real -->
+        <domain includeSubdomains="false">192.168.100.88</domain>
+    </domain-config>
+</network-security-config>
